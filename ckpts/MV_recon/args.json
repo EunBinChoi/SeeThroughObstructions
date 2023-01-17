@@ -3,7 +3,7 @@
     "train_optics": false,
     "pretrained_DOE": "ckpts/MV_DOE_phase.pt",
     "pretrained_G": null,
-    "result_path": "/projects/FHEIDE/obstruction_free_doe/ckpt/MV_recon",
+    "result_path": "/Users/echoiing/SeeThroughObstructions/ckpts/MV_recon",
     "param_file": "config/param_MV_1600.py",
     "obstruction": "dirt_raindrop",
     "sensor_noise": 0.008,
