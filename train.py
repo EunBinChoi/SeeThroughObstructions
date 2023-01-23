@@ -183,7 +183,7 @@ def main():
 
     def none_or_str(value):
         if value.lower() == 'none':
-            return None
+            return None####n
         return value
 
     parser.add_argument('--debug', action="store_true", help='debug mode, train on validation data to speed up the process')
