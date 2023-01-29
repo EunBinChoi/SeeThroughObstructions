@@ -162,6 +162,7 @@ def train(args):
             step_loss = train_step(batch_data, DOE_phase, optics_optimizer, G, G_optimizer, total_step, args)
             total_step += 1
             train_loss += step_loss
+
             if total_step % args.log_freq == 0:
                 log(DOE_phase, G, test_data, total_step, args)
                 args.writer.add_scalar('train_loss/loss',train_loss/args.log_freq, total_step)
