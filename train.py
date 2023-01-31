@@ -211,7 +211,7 @@ def main():
     args = parser.parse_args()
     args.device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-    param = SourceFileLoader("param", args.param_file).load_module(
+    param = SourceFileLoader("param", args.param_file).load_module()
     param = convert_resolution(param,args)
 
     if args.pretrained_DOE is not None:
